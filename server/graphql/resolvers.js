@@ -1,39 +1,19 @@
-const games = [
-  {
-    id: 1,
-    title: 'Horizon: Zero Dawn',
-    platform: 'PlayStation 4',
-    genre: 'Action, Adventure',
-    price: 2500.00,
-    type: 'owned',
-    photoUrl: '',
-  },
-  {
-    id: 2,
-    title: 'Dirt Rally',
-    platform: 'PlayStation 4',
-    genre: 'Racing',
-    price: 1650.00,
-    type: 'owned',
-    photoUrl: '',
-  },
-];
+import Game from '../../bookshelf/models/Game';
 
 export default {
   Query: {
-    games: () => {
-      return games;
+    games: async () => {
+      const games = await Game.fetchAll();
+
+      return games.map(game => {
+        return game.toJSON();
+      });
     }
   },
 
   Mutation: {
     addGame: (_, data) => {
-      data.id = games.length + 1
-      data.type = 'not-owned'
-
-      games.push(data)
-
-      return data
+      return { id: 100, title: 'Dummy Data' };
     }
   }
 };
