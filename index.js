@@ -1,5 +1,3 @@
-const start = () => {
-  console.log('Hello World!')
-}
+import Server from './server';
 
-start()
+Server.start()
