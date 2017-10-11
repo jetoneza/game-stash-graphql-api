@@ -12,5 +12,15 @@ export default `
   type Query {
     games: [Game],
   }
+
+  type Mutation {
+    addGame (
+      title: String!,
+      platform: String,
+      genre: String,
+      price: Float,
+      photoUrl: String,
+    ): Game!
+  }
 `
 

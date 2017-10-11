@@ -25,4 +25,15 @@ export default {
       return games;
     }
   },
+
+  Mutation: {
+    addGame: (_, data) => {
+      data.id = games.length + 1
+      data.type = 'not-owned'
+
+      games.push(data)
+
+      return data
+    }
+  }
 };
