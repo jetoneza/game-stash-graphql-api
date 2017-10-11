@@ -1,1 +1,5 @@
-console.log('Hello!')
+const start = () => {
+  console.log('Hello!')
+}
+
+start()

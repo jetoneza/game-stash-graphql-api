@@ -4,8 +4,13 @@
   "description": "A simple graphql API for GameStash app.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "babel-node index.js"
   },
   "author": "Jethro Ordaneza",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  }
 }
