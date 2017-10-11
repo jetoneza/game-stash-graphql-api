@@ -12,8 +12,12 @@ export default {
   },
 
   Mutation: {
-    addGame: (_, data) => {
-      return { id: 100, title: 'Dummy Data' };
+    addGame: async (_, data) => {
+      // TODO: add validation
+      const game = new Game({ ...data, type: 'wishlist' });
+      const result = await game.save()
+
+      return result.toJSON()
     }
   }
 };
