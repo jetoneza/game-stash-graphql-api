@@ -1,0 +1,11 @@
+{
+  "name": "game-stash-graphql-api",
+  "version": "1.0.0",
+  "description": "A simple graphql API for GameStash app.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Jethro Ordaneza",
+  "license": "ISC"
+}
