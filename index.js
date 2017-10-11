@@ -1,5 +1,5 @@
 const start = () => {
-  console.log('Hello!')
+  console.log('Hello World!')
 }
 
 start()

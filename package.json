@@ -4,7 +4,7 @@
   "description": "A simple graphql API for GameStash app.",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index.js"
+    "start": "nodemon --exec babel-node index.js"
   },
   "author": "Jethro Ordaneza",
   "license": "ISC",
@@ -12,5 +12,8 @@
     "babel-cli": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
   }
 }
