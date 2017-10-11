@@ -8,6 +8,10 @@ Container.use = (namespace) => {
   return providers[namespace]
 }
 
-Container.bootProviders = () => {
+Container.initializeProviders = () => {
   providers.Server = new Server()
+}
+
+Container.bootProviders = () => {
+  providers.Server.start()
 }

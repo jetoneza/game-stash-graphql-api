@@ -2,8 +2,7 @@ import Container from './container'
 
 export default {
   run: () => {
+    Container.initializeProviders()
     Container.bootProviders()
-    const Server = use('Server')
-    Server.start()
   }
 }
