@@ -4,7 +4,8 @@
   "description": "A simple graphql API for GameStash app.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js",
+    "start": "babel-node index.js",
+    "dev": "nodemon --exec babel-node index.js",
     "db": "node_modules/knex/bin/cli.js"
   },
   "author": "Jethro Ordaneza",

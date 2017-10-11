@@ -13,7 +13,7 @@ $npm run db seed:run
 
 Run app:
 ```bash
-$npm start
+$npm run dev
 ```
 
 Go to localhost:3333/graphiql to play with the graphql API.

@@ -9,7 +9,7 @@ class Server {
 
     this.app = app;
     this.app.listen(this.port, () => {
-      console.log('Server is now listening to port' + this.port);
+      console.log('Server is now listening to port ' + this.port);
     })
   }
 }
