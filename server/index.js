@@ -1,12 +1,13 @@
-import app from './app'
-
 class Server {
   constructor(port = 3333) {
-    this.app = app;
     this.port = port;
+    this.app = null;
   }
 
   start () {
+    const app = require('./app');
+
+    this.app = app;
     this.app.listen(this.port, () => {
       console.log('Server is now listening to port' + this.port);
     })
