@@ -1,5 +1,5 @@
 class Server {
-  constructor(port = 3333) {
+  constructor(port = 3002) {
     this.port = port;
     this.app = null;
   }
