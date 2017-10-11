@@ -13,4 +13,4 @@ class Server {
   }
 }
 
-export default new Server()
+export default Server

@@ -1,3 +1,3 @@
-import Server from './server';
+import bootstrap from './bootstrap';
 
-Server.start()
+bootstrap.run()
